@@ -1,4 +1,3 @@
-import React, { useState } from "react"
 import { Todo } from "../types"
 
 interface ITodoItem extends Todo {
@@ -7,11 +6,7 @@ interface ITodoItem extends Todo {
 	toggleTodo: (id: Todo['id']) => void
 }
 
-interface ITodo {
-	id: string,
-	title: string,
-	completed: boolean
-}
+
 
 const TodoItem = ({ id, title, completed, removeTodo, toggleTodo }: ITodoItem) => {
 
