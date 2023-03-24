@@ -1,7 +1,7 @@
-import { Todo } from './types';
 import { NewTodoForm } from 'features/Todo/NewTodoForm';
-import { useState, useEffect } from 'react';
 import TodoList from './features/Todo/TodoList';
+import { NewAsyncTodo } from 'features/Todo/AsyncTodo/NewAsyncTodo';
+import AsyncTodoList from 'features/Todo/AsyncTodo/AsyncTodoList';
 
 const App = () => {
 
@@ -9,6 +9,11 @@ const App = () => {
     <div className="App" >
       <NewTodoForm />
       <TodoList />
+
+      <hr />
+
+      <NewAsyncTodo />
+      <AsyncTodoList />
     </div >
   );
 }
